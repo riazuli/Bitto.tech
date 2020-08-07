@@ -142,4 +142,62 @@ button:focus {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
+.intro-area {
+  background-image: url(../img/herobg.svg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.intro-area .intro-text {
+  text-align: center;
+  padding: 60px 0px 30px;
+}
+
+.intro-area .intro-text h2 {
+  font-weight: 900;
+  color: #FC7163;
+  font-size: 60px;
+}
+
+.intro-area .intro-text img.people {
+  width: 100%;
+  max-width: 900px;
+}
+
+.intro-area .intro-text p {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px 0px;
+  color: #2D3561;
+}
+
+.intro-area .intro-text p span {
+  font-style: italic;
+  color: #1D44F9;
+  display: block;
+}
+
+.intro-area .intro-video {
+  display: inline-block;
+  position: relative;
+}
+
+.intro-area .intro-video img {
+  border-radius: 20px;
+  max-width: 600px;
+}
+
+.intro-area .intro-video .icon {
+  position: absolute;
+  left: 50%;
+  display: inline-block;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.intro-area .intro-video .icon img {
+  max-width: 100px;
+}
 /*# sourceMappingURL=style.css.map */
