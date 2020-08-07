@@ -1,5 +1,9 @@
 /* Basic css */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap");
+
+$primary-font: "Montserrat", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+
 html,
 body {
   height: 100%;
@@ -24,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: $primary-font;
   font-weight: 800;
   margin: 0 0 15px;
   line-height: 1.2;
@@ -47,39 +51,30 @@ button:focus {
   font-weight: 700;
   font-style: initial;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  background: #007bc0;
-  background: linear-gradient(185deg, #007bc0 0%, #13bef0 100%);
+  font-family: $primary-font;
+  background: rgb(0, 123, 192);
+  background: -moz-linear-gradient(
+    185deg,
+    rgba(0, 123, 192, 1) 0%,
+    rgba(19, 190, 240, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    185deg,
+    rgba(0, 123, 192, 1) 0%,
+    rgba(19, 190, 240, 1) 100%
+  );
+  background: linear-gradient(
+    185deg,
+    rgba(0, 123, 192, 1) 0%,
+    rgba(19, 190, 240, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007bc0",endColorstr="#13bef0",GradientType=1);
   color: #fff;
   padding: 10px 15px;
   border-radius: 5px;
   margin: 0px 8px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  &:hover{
+    color: #fff;
+  }
 }
-
-.gradient-btn:hover {
-  color: #fff;
-}
-
-.header-area .top-header {
-  background: #ff4c8f;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff4c8f), to(#ffb38f));
-  background: linear-gradient(180deg, #ff4c8f 0%, #ffb38f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4c8f",endColorstr="#ffb38f",GradientType=1);
-}
-
-.header-area .top-text {
-  text-align: center;
-  padding: 10px 0px;
-}
-
-.header-area .top-text h4 {
-  font-size: 20px;
-  font-weight: 900;
-  color: #fff;
-  font-style: italic;
-  margin: 0px;
-}
-/*# sourceMappingURL=style.css.map */
