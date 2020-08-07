@@ -7,7 +7,7 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #000;
+  color: #000000;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -42,6 +42,10 @@ button:focus {
   outline: 0 solid;
 }
 
+.container {
+  max-width: 1250px;
+}
+
 .gradient-btn {
   display: inline-block;
   font-weight: 700;
@@ -51,7 +55,7 @@ button:focus {
   background: #007bc0;
   background: linear-gradient(185deg, #007bc0 0%, #13bef0 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007bc0",endColorstr="#13bef0",GradientType=1);
-  color: #fff;
+  color: #ffffff;
   padding: 10px 15px;
   border-radius: 5px;
   margin: 0px 8px;
@@ -60,7 +64,7 @@ button:focus {
 }
 
 .gradient-btn:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 .header-area .top-header {
@@ -78,8 +82,64 @@ button:focus {
 .header-area .top-text h4 {
   font-size: 20px;
   font-weight: 900;
-  color: #fff;
+  color: #ffffff;
   font-style: italic;
   margin: 0px;
+}
+
+.header-area .header {
+  background-color: #ffffff;
+}
+
+.header-area .header .navbar-brand img {
+  max-width: 180px;
+}
+
+.header-area .header .navbar .navbar-nav {
+  width: 100%;
+}
+
+.header-area .header .navbar .navbar-nav .nav-item .nav-link {
+  color: #2c3033;
+  font-size: 15px;
+}
+
+.header-area .header .navbar .navbar-nav .nav-item.active .nav-link {
+  color: #0086CA;
+}
+
+.header-area .header .navbar .navbar-nav .nav-item.dropdown {
+  margin-left: auto;
+}
+
+.header-area .header .navbar .navbar-nav .nav-item.dropdown .dropdown-toggle img {
+  max-width: 15px;
+  margin-left: 3px;
+}
+
+.header-area .header .navbar .navbar-nav .nav-item.dropdown .dropdown-toggle:after {
+  display: none;
+}
+
+.header-area .header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+  border: 0px;
+  background-color: #F0F6F8;
+  left: auto;
+  right: 0;
+  border-radius: 5px;
+}
+
+.header-area .header .navbar .navbar-nav .nav-item.dropdown .dropdown-item.active,
+.header-area .header .navbar .navbar-nav .nav-item.dropdown .dropdown-item:active {
+  background: transparent;
+  color: #0086CA;
+}
+
+.header-area .header .navbar .navbar-nav .nav-item.dropdown .dropdown-item {
+  color: #2c3033;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 /*# sourceMappingURL=style.css.map */

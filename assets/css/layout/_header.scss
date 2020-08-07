@@ -25,9 +25,67 @@
     h4 {
       font-size: 20px;
       font-weight: 900;
-      color: #fff;
+      color: $white;
       font-style: italic;
       margin: 0px;
+    }
+  }
+  .header {
+    background-color: $white;
+    .navbar-brand {
+      img {
+        max-width: 180px;
+      }
+    }
+
+    .navbar {
+      .navbar-nav {
+        width: 100%;
+        .nav-item {
+          .nav-link {
+            color: $grayColor;
+            font-size: 15px;
+          }
+          &.active {
+            .nav-link {
+              color: $secondaryColor;
+            }
+          }
+          &.dropdown {
+            margin-left: auto;
+            .dropdown-toggle {
+              img {
+                max-width: 15px;
+                margin-left: 3px;
+              }
+              &:after {
+                display: none;
+              }
+            }
+
+            .dropdown-menu {
+              border: 0px;
+              background-color: $offwhiteColor;
+              left: auto;
+              right: 0;
+              border-radius: 5px;
+            }
+
+            .dropdown-item.active,
+            .dropdown-item:active {
+              background: transparent;
+              color: $secondaryColor;
+            }
+
+            .dropdown-item {
+              color: $grayColor;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+      }
     }
   }
 }

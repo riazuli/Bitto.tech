@@ -1,8 +1,6 @@
 /* Basic css */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap");
 
-$primary-font: "Montserrat", sans-serif;
-$secondary-font: "Open Sans", sans-serif;
 
 html,
 body {
@@ -10,8 +8,8 @@ body {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #000;
+  font-family: $secondaryFont;
+  color: $black;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -28,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primary-font;
+  font-family: $primaryFont;
   font-weight: 800;
   margin: 0 0 15px;
   line-height: 1.2;
@@ -46,12 +44,15 @@ button:focus {
   outline: 0 solid;
 }
 
+.container{
+  max-width: 1250px;
+}
 .gradient-btn {
   display: inline-block;
   font-weight: 700;
   font-style: initial;
   font-size: 16px;
-  font-family: $primary-font;
+  font-family: $primaryFont;
   background: rgb(0, 123, 192);
   background: -moz-linear-gradient(
     185deg,
@@ -69,12 +70,12 @@ button:focus {
     rgba(19, 190, 240, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007bc0",endColorstr="#13bef0",GradientType=1);
-  color: #fff;
+  color: $white;
   padding: 10px 15px;
   border-radius: 5px;
   margin: 0px 8px;
   transition: all 0.3s ease;
   &:hover{
-    color: #fff;
+    color: $white;
   }
 }
