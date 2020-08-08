@@ -1,0 +1,61 @@
+.preview-section {
+  .preview-div {
+    position: relative;
+    .preview {
+      border-radius: 30px;
+    }
+    .preview-content {
+      background-color: $white;
+      width: 400px;
+      padding: 30px;
+      border-radius: 45px;
+      box-shadow: 10px 50px 59px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      right: -30px;
+      bottom: -20px;
+      p {
+        font-size: 20px;
+        color: $navyColor;
+        font-weight: 800;
+        margin: 0px;
+        span {
+          font-style: italic;
+          font-size: 28px;
+          color: $primaryColor;
+        }
+        &.big {
+          font-size: 50px;
+          color: $primaryColor;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  .disclaimer-text {
+    p {
+      font-style: italic;
+      color: $primaryColor;
+      margin-top: 20px;
+      a {
+        font-style: italic;
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+.title-text {
+  color: $navyColor;
+  font-size: 50px;
+  font-weight: 700;
+  .red {
+    font-size: 60px;
+    color: $primaryColor;
+    font-weight: 900;
+  }
+  .blue {
+    font-size: 60px;
+    color: $secondaryColor;
+    font-weight: 900;
+  }
+}

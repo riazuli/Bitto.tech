@@ -47,6 +47,7 @@ button:focus {
 }
 
 .gradient-btn {
+  text-align: center;
   display: inline-block;
   font-weight: 700;
   font-style: initial;
@@ -61,10 +62,27 @@ button:focus {
   margin: 0px 8px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 2px 10px #95e0f7;
+          box-shadow: 0px 2px 10px #95e0f7;
 }
 
 .gradient-btn:hover {
   color: #ffffff;
+}
+
+.gradient-btn.global {
+  min-width: 220px;
+}
+
+.section-block {
+  padding: 50px 0px;
+}
+
+.red-gradient {
+  background: #ff4c8f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff4c8f), to(#ffb38f));
+  background: linear-gradient(180deg, #ff4c8f 0%, #ffb38f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4c8f",endColorstr="#ffb38f",GradientType=1);
 }
 
 .header-area .top-header {
@@ -166,6 +184,7 @@ button:focus {
 }
 
 .intro-area .intro-text p {
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 700;
   margin: 30px 0px;
@@ -178,17 +197,17 @@ button:focus {
   display: block;
 }
 
-.intro-area .intro-video {
+.intro-video {
   display: inline-block;
   position: relative;
 }
 
-.intro-area .intro-video img {
+.intro-video img {
   border-radius: 20px;
   max-width: 600px;
 }
 
-.intro-area .intro-video .icon {
+.intro-video .icon {
   position: absolute;
   left: 50%;
   display: inline-block;
@@ -197,7 +216,336 @@ button:focus {
           transform: translate(-50%, -50%);
 }
 
-.intro-area .intro-video .icon img {
+.intro-video .icon img {
   max-width: 100px;
+}
+
+.mononpoly-section {
+  background-image: url(../img/triangle-rotate.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 40px 0px;
+}
+
+.list-block h2 {
+  font-weight: 800;
+  font-size: 35px;
+  color: #2D3561;
+}
+
+.list-block h2 .red {
+  color: #FC7163;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.list-block h4.blue {
+  font-weight: 700;
+  color: #0086CA;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.list-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.list-block ul li {
+  display: block;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  color: #2D3561;
+  font-weight: 800;
+  font-size: 24px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.list-block ul li .blue {
+  color: #1D44F9;
+  font-weight: 900;
+}
+
+.list-block ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  background-image: url(../img/oval.svg);
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+
+.roi-section {
+  background-image: url(../img/roi.svg);
+  padding: 50px 0px 0px;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  min-height: 600px;
+  margin-bottom: 20px;
+}
+
+.roi-section > .container, .roi-section .row {
+  min-height: 600px;
+}
+
+.roi-section .roi-text-wrap {
+  -webkit-box-shadow: -30px 50px 59px rgba(60, 78, 105, 0.1);
+          box-shadow: -30px 50px 59px rgba(60, 78, 105, 0.1);
+  padding: 50px 50px 70px;
+}
+
+.roi-section .roi-text-wrap .roi-text {
+  max-width: 650px;
+}
+
+.roi-section .roi-text-wrap .roi-text h2 {
+  font-size: 40px;
+  color: #2D3561;
+}
+
+.roi-section .roi-text-wrap .roi-text h2 .blue {
+  color: #0086CA;
+}
+
+.roi-section .roi-text-wrap .roi-text h2.sub-title {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.roi-section .roi-text-wrap .roi-text h2.sub-title .red {
+  color: #FC7163;
+}
+
+.roi-section .roi-text-wrap .roi-text .gradient-btn {
+  margin-top: 30px;
+}
+
+.knowledge-section {
+  background-image: url(../img/hairy-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  padding: 70px 0px 0px;
+}
+
+.knowledge-section .knowledge-box {
+  position: relative;
+  background-color: #ffffff;
+  border: 4px solid #1D44F9;
+  border-radius: 15px;
+  padding: 70px 50px;
+  text-align: center;
+  -webkit-box-shadow: 10px 50px 59px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 50px 59px rgba(0, 0, 0, 0.1);
+}
+
+.knowledge-section .knowledge-box h2 {
+  color: #2D3561;
+  font-size: 50px;
+}
+
+.knowledge-section .knowledge-box h2 .blue {
+  color: #0086CA;
+}
+
+.knowledge-section .knowledge-box h2.red {
+  color: #FC7163;
+  margin-top: 50px;
+}
+
+.knowledge-section .knowledge-box .flying-man,
+.knowledge-section .knowledge-box .flying-women {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+}
+
+.knowledge-section .knowledge-box .flying-man {
+  top: -20px;
+  right: 0;
+}
+
+.knowledge-section .knowledge-box .flying-women {
+  top: -180px;
+  right: 130px;
+}
+
+.categories-section {
+  background-image: url(../img/illustration.svg);
+  background-size: 600px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+}
+
+.videodesc-section {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.videodesc-section .intro-video {
+  margin-top: -70px;
+}
+
+.videodesc-section ul {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.videodesc-section ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.videodesc-section .left li {
+  text-align: right;
+}
+
+.videodesc-section .gradient-btn {
+  margin-top: 60px;
+}
+
+.videodesc-section:before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/cog-bg.svg);
+  background-size: contain;
+  background-position: center bottom;
+  width: 100%;
+  height: 100%;
+}
+
+.brands-section {
+  position: relative;
+  padding: 80px 0px;
+  background-color: #F0F6F8;
+  text-align: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
+}
+
+.brands-section:after {
+  content: "BITTO ARE NOW ON";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 150px;
+  font-weight: 900;
+  color: #DBDFEF;
+  opacity: 0.1;
+}
+
+.brands-section .title {
+  font-size: 70px;
+  font-weight: 900;
+  color: #FC7163;
+}
+
+.brands-section .blue {
+  font-family: "Montserrat", sans-serif;
+  color: #1D44F9;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.brands-section .brands .col-lg-2 {
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preview-section .preview-div {
+  position: relative;
+}
+
+.preview-section .preview-div .preview {
+  border-radius: 30px;
+}
+
+.preview-section .preview-div .preview-content {
+  background-color: #ffffff;
+  width: 400px;
+  padding: 30px;
+  border-radius: 45px;
+  -webkit-box-shadow: 10px 50px 59px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 50px 59px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: -30px;
+  bottom: -20px;
+}
+
+.preview-section .preview-div .preview-content p {
+  font-size: 20px;
+  color: #2D3561;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.preview-section .preview-div .preview-content p span {
+  font-style: italic;
+  font-size: 28px;
+  color: #FC7163;
+}
+
+.preview-section .preview-div .preview-content p.big {
+  font-size: 50px;
+  color: #FC7163;
+  font-style: italic;
+}
+
+.preview-section .disclaimer-text p {
+  font-style: italic;
+  color: #FC7163;
+  margin-top: 20px;
+}
+
+.preview-section .disclaimer-text p a {
+  font-style: italic;
+  color: #FC7163;
+}
+
+.title-text {
+  color: #2D3561;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.title-text .red {
+  font-size: 60px;
+  color: #FC7163;
+  font-weight: 900;
+}
+
+.title-text .blue {
+  font-size: 60px;
+  color: #0086CA;
+  font-weight: 900;
+}
+
+.btc-section {
+  background-image: url(../img/bg-blue.svg);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 /*# sourceMappingURL=style.css.map */

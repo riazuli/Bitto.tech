@@ -1,0 +1,42 @@
+.knowledge-section {
+  background-image: url(../img/hairy-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  padding: 70px 0px 0px;
+  .knowledge-box {
+    position: relative;
+    background-color: $white;
+    border: 4px solid $blueColor;
+    border-radius: 15px;
+    padding: 70px 50px;
+    text-align: center;
+    box-shadow: 10px 50px 59px rgba(0,0,0,0.1);
+    h2 {
+      color: $navyColor;
+      font-size: 50px;
+      .blue {
+        color: $secondaryColor;
+      }
+      &.red {
+        color: $primaryColor;
+        margin-top: 50px;
+      }
+    }
+    .flying-man,
+    .flying-women {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 120px;
+    }
+    .flying-man {
+      top: -20px;
+      right: 0;
+    }
+    .flying-women {
+      top: -180px;
+      right: 130px;
+    }
+  }
+}

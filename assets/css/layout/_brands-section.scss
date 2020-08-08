@@ -1,0 +1,37 @@
+.brands-section {
+  position: relative;
+  padding: 80px 0px;
+  background-color: $offwhiteColor;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
+  &:after{
+    content: "BITTO ARE NOW ON";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 150px;
+    font-weight: 900;
+    color: $grayColor2;
+    opacity: 0.1;
+  }
+  .title {
+    font-size: 70px;
+    font-weight: 900;
+    color: $primaryColor;
+  }
+  .blue {
+    font-family: $primaryFont;
+    color: $blueColor;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .brands {
+    .col-lg-2 {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

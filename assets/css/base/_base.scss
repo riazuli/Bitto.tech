@@ -1,7 +1,6 @@
 /* Basic css */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap");
 
-
 html,
 body {
   height: 100%;
@@ -44,10 +43,11 @@ button:focus {
   outline: 0 solid;
 }
 
-.container{
+.container {
   max-width: 1250px;
 }
 .gradient-btn {
+  text-align: center;
   display: inline-block;
   font-weight: 700;
   font-style: initial;
@@ -75,7 +75,34 @@ button:focus {
   border-radius: 5px;
   margin: 0px 8px;
   transition: all 0.3s ease;
-  &:hover{
+  box-shadow: 0px 2px 10px #95e0f7;
+  &:hover {
     color: $white;
   }
+  &.global {
+    min-width: 220px;
+  }
+}
+.section-block {
+  padding: 50px 0px;
+}
+
+.red-gradient {
+  background: rgb(255, 76, 143);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 76, 143, 1) 0%,
+    rgba(255, 179, 143, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 76, 143, 1) 0%,
+    rgba(255, 179, 143, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 76, 143, 1) 0%,
+    rgba(255, 179, 143, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4c8f",endColorstr="#ffb38f",GradientType=1);
 }

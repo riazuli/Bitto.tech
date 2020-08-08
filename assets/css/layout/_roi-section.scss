@@ -1,0 +1,36 @@
+.roi-section {
+  background-image: url(../img/roi.svg);
+  padding: 50px 0px 0px;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  min-height: 600px;
+  margin-bottom: 20px;
+  > .container, .row{
+    min-height: 600px;
+  }
+  .roi-text-wrap {
+    box-shadow: -30px 50px 59px rgba(60, 78, 105, 0.1);
+    padding: 50px 50px 70px;
+    .roi-text {
+      max-width: 650px;
+      h2 {
+        font-size: 40px;
+        color: $navyColor;
+        .blue {
+          color: $secondaryColor;
+        }
+        &.sub-title {
+          font-size: 60px;
+          font-weight: 900;
+          .red {
+            color: $primaryColor;
+          }
+        }
+      }
+      .gradient-btn{
+        margin-top: 30px;
+      }
+    }
+  }
+}
