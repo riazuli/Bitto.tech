@@ -77,13 +77,16 @@
 
 .title-text {
   color: $navyColor;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   @include md {
     font-size: 35px;
   }
   @include sm {
     font-size: 24px;
+  }
+  i{
+    font-weight: 900;
   }
   .red {
     font-size: 55px;
@@ -105,6 +108,15 @@
     }
     @include sm {
       font-size: 30px;
+    }
+  }
+  &.smaller{
+    font-size: 30px;
+    .blue {
+      font-size: 40px;
+    }
+    .red{
+      font-size: 40px;
     }
   }
 }

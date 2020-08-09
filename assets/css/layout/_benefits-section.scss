@@ -1,0 +1,15 @@
+.benefits-section{
+  background-image: url(../img/man-with-laptop.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 45%;
+  .intro-video{
+    margin-bottom: 15px;
+  }
+  @include md{
+    background: transparent;
+  }
+  @include sm{
+    background: transparent;
+  }
+}

@@ -1,0 +1,14 @@
+.requirements-section{
+  .shadow-list{
+    padding: 20px 0px;
+  }
+  .shadow-box{
+    min-height: 100%;
+    @include md{
+      min-height: auto;
+    }
+    @include sm{
+      min-height: auto;
+    }
+  }
+}

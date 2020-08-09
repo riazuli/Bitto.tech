@@ -1,5 +1,5 @@
 /* Basic css */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap");
 html,
 body {
   height: 100%;
@@ -90,6 +90,38 @@ button:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff4c8f), to(#ffb38f));
   background: linear-gradient(180deg, #ff4c8f 0%, #ffb38f 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4c8f",endColorstr="#ffb38f",GradientType=1);
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 4px 0px;
+}
+
+.download-btn:hover {
+  opacity: 0.9;
+}
+
+.red {
+  color: #FC7163;
+}
+
+@media only screen and (max-width: 767px) {
+  .red {
+    font-size: 16px;
+  }
+}
+
+.blue {
+  color: #1D44F9;
+}
+
+@media only screen and (max-width: 767px) {
+  .blue {
+    font-size: 16px;
+  }
 }
 
 .header-area {
@@ -478,7 +510,7 @@ button:focus {
 }
 
 .list-block h4.blue {
-  font-weight: 700;
+  font-weight: 900;
   color: #0086CA;
   font-size: 28px;
   font-style: italic;
@@ -488,6 +520,10 @@ button:focus {
   .list-block h4.blue {
     font-size: 24px;
   }
+}
+
+.list-block h4.thin {
+  font-weight: 700;
 }
 
 .list-block ul {
@@ -1071,7 +1107,7 @@ button:focus {
 
 .title-text {
   color: #2D3561;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -1085,6 +1121,10 @@ button:focus {
   .title-text {
     font-size: 24px;
   }
+}
+
+.title-text i {
+  font-weight: 900;
 }
 
 .title-text .red {
@@ -1121,6 +1161,18 @@ button:focus {
   .title-text .blue {
     font-size: 30px;
   }
+}
+
+.title-text.smaller {
+  font-size: 30px;
+}
+
+.title-text.smaller .blue {
+  font-size: 40px;
+}
+
+.title-text.smaller .red {
+  font-size: 40px;
 }
 
 .btc-section {
@@ -1359,6 +1411,12 @@ button:focus {
   font-size: 24px;
 }
 
+.texts-content p .blue {
+  color: #1D44F9;
+  font-weight: 900;
+  font-style: italic;
+}
+
 .texts-content p.blue {
   color: #1D44F9;
   font-weight: 900;
@@ -1384,6 +1442,10 @@ button:focus {
   .texts-content p {
     font-size: 16px;
   }
+}
+
+.texts-content.blue p {
+  color: #0086CA;
 }
 
 .bordered-box {
@@ -1434,5 +1496,316 @@ button:focus {
   .bitcointalk-section .preview-div .preview-content {
     top: 0;
   }
+}
+
+.wave-section {
+  background-image: url(../img//wave-bg.svg);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.wave-section .title-text {
+  padding-top: 90px;
+}
+
+.wave-section .tokens img {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.1);
+}
+
+.important-section {
+  position: relative;
+  margin-top: 80px;
+}
+
+.important-section .svg-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.important-section .svg-wrap svg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.important-section .gradient-btn {
+  margin-bottom: 0 !important;
+}
+
+.white-box {
+  position: relative;
+  background: #ffffff;
+  border: 2px solid #1D44F9;
+  border-radius: 15px;
+  padding: 50px 40px;
+  margin-top: -120px;
+}
+
+@media only screen and (max-width: 767px) {
+  .white-box {
+    padding: 20px 10px;
+  }
+}
+
+.white-box .list-block ul li {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .white-box .list-block ul li {
+    font-size: 16px;
+  }
+}
+
+.white-box .list-block.check-block ul li:before {
+  background-image: url(../img/ok.svg);
+}
+
+.white-box .b-icon {
+  position: absolute;
+  right: -50px;
+  top: -135px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+  .white-box .b-icon {
+    width: 100px;
+    top: -50px;
+    right: 0;
+  }
+}
+
+.sub-title {
+  font-size: 20px;
+  color: #0086CA;
+  margin-top: 24px;
+}
+
+.sub-title span {
+  font-weight: 700;
+}
+
+.shadow-box {
+  -webkit-box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shadow-box {
+    padding: 10px;
+  }
+}
+
+.calculation-box {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding-bottom: 20px;
+  border-radius: 40px;
+  margin: 50px 0px 50px;
+}
+
+.calculation-box .head {
+  background: #017fc3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#017fc3), to(#10b5ea));
+  background: linear-gradient(180deg, #017fc3 0%, #10b5ea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#017fc3",endColorstr="#10b5ea",GradientType=1);
+  padding: 20px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.calculation-box .head h4 {
+  margin: 0px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .calculation-box .head h4 {
+    font-size: 16px;
+  }
+}
+
+.calculation-box .calc-list {
+  padding: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .calculation-box .calc-list {
+    padding: 10px;
+  }
+}
+
+.calculation-box .calc-list .single-calc {
+  padding: 30px 10px;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.calculation-box .calc-list .single-calc .title {
+  text-align: center;
+  border-bottom: 2px solid #cfd8dc;
+}
+
+.calculation-box .calc-list .single-calc .title h4 {
+  font-size: 16px;
+  color: #0086CA;
+  font-weight: 700;
+}
+
+.calculation-box .calc-list .single-calc .title h4 i {
+  display: block;
+  font-weight: 900;
+}
+
+.calculation-box .calc-list .single-calc .title .img-wrap {
+  min-height: 120px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculation-box .calc-list .single-calc .text {
+  padding-top: 20px;
+}
+
+.calculation-box .calc-list .single-calc .text p {
+  color: #2c3033;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.calculation-box .calc-list .single-calc .text p.big {
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
+  color: #0086CA;
+  margin-bottom: 15px;
+}
+
+.calculation-box .calc-list .single-calc.active {
+  border: 8px solid #0086CA;
+}
+
+.calculation-box .calc-list .single-calc.active .text p {
+  color: #2D3561;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.calculation-box .calc-list .single-calc.active .text p.big {
+  font-size: 22px;
+  color: #FC7163;
+}
+
+.calculation-box.pink .head {
+  background: #ff498f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff498f), to(#ffaf8f));
+  background: linear-gradient(180deg, #ff498f 0%, #ffaf8f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff498f",endColorstr="#ffaf8f",GradientType=1);
+}
+
+.calculation-box.pink .calc-list .single-calc.active {
+  border: 8px solid #FC7163;
+}
+
+.requirements-section .shadow-list {
+  padding: 20px 0px;
+}
+
+.requirements-section .shadow-box {
+  min-height: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .requirements-section .shadow-box {
+    min-height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .requirements-section .shadow-box {
+    min-height: auto;
+  }
+}
+
+.download-section {
+  position: relative;
+  background-image: url(../img/oval2-bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50px center;
+}
+
+.download-section .single-phone {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .download-section .download-btn {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .download-section .download-btn {
+    display: block;
+  }
+}
+
+.benefits-section {
+  background-image: url(../img/man-with-laptop.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 45%;
+}
+
+.benefits-section .intro-video {
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .benefits-section {
+    background: transparent;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .benefits-section {
+    background: transparent;
+  }
+}
+
+.own-section {
+  background-image: url(../../img/own-bg.svg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

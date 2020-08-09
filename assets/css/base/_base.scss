@@ -1,5 +1,5 @@
 /* Basic css */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap");
 
 html,
 body {
@@ -111,4 +111,29 @@ button:focus {
     rgba(255, 179, 143, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4c8f",endColorstr="#ffb38f",GradientType=1);
+}
+
+
+.download-btn {
+  display: inline-block;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  margin: 4px 0px;
+  &:hover{
+
+    opacity: 0.9;
+  }
+}
+
+.red{
+  color: $primaryColor;
+  @include sm{
+    font-size: 16px;
+  }
+}
+.blue{
+  color: $blueColor;
+  @include sm{
+    font-size: 16px;
+  }
 }

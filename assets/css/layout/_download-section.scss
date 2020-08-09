@@ -1,0 +1,18 @@
+.download-section {
+  position: relative;
+  background-image: url(../img/oval2-bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50px center;
+  .single-phone{
+    margin-bottom: 20px;
+  }
+  .download-btn{
+    @include md{
+      display: block;
+    }
+    @include sm{
+      display: block;
+    }
+  }
+}
