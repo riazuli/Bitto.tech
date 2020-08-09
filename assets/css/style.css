@@ -73,12 +73,13 @@ button:focus {
 
 .gradient-btn.global {
   min-width: 220px;
+  margin: 5px 0px;
 }
 
 .gradient-btn.transparent {
-  border: 1px solid #1D44F9;
+  border: 1px solid #0086CA;
   background: transparent;
-  color: #1D44F9;
+  color: #0086CA;
 }
 
 .section-block {
@@ -572,6 +573,52 @@ button:focus {
   .list-block ul li {
     font-size: 20px;
     padding-left: 35px;
+  }
+}
+
+.list-block.no-list h4.navy {
+  font-size: 30px;
+  color: #2D3561;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .list-block.no-list h4.navy {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .list-block.no-list h4.navy {
+    margin-top: 20px;
+  }
+}
+
+.list-block.no-list h4.navy .blue {
+  color: #0086CA;
+}
+
+.list-block.no-list h4.navy .real-red {
+  color: #CA0055;
+}
+
+@media only screen and (max-width: 767px) {
+  .list-block.no-list h4.navy {
+    font-size: 20px;
+  }
+}
+
+.list-block.no-list ul li {
+  padding-left: 0px;
+  font-size: 20px;
+}
+
+.list-block.no-list ul li:before {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .list-block.no-list ul li {
+    font-size: 16px;
   }
 }
 
@@ -1141,8 +1188,12 @@ button:focus {
 
 @media only screen and (max-width: 767px) {
   .title-text .red {
-    font-size: 30px;
+    font-size: 24px;
   }
+}
+
+.title-text .white {
+  color: #ffffff;
 }
 
 .title-text .blue {
@@ -1159,7 +1210,7 @@ button:focus {
 
 @media only screen and (max-width: 767px) {
   .title-text .blue {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 
@@ -1167,12 +1218,48 @@ button:focus {
   font-size: 30px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .title-text.smaller {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title-text.smaller {
+    font-size: 20px;
+  }
+}
+
 .title-text.smaller .blue {
   font-size: 40px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .title-text.smaller .blue {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title-text.smaller .blue {
+    font-size: 22px;
+  }
+}
+
 .title-text.smaller .red {
   font-size: 40px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .title-text.smaller .red {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title-text.smaller .red {
+    font-size: 22px;
+  }
 }
 
 .btc-section {
@@ -1340,6 +1427,11 @@ button:focus {
   .black-section h1 {
     font-size: 24px;
   }
+}
+
+.black-section .title-text .blue {
+  color: #0086CA;
+  font-style: normal;
 }
 
 .services-section {
@@ -1574,7 +1666,7 @@ button:focus {
 
 .white-box .b-icon {
   position: absolute;
-  right: -50px;
+  right: 0px;
   top: -135px;
   width: 200px;
 }
@@ -1803,9 +1895,153 @@ button:focus {
 }
 
 .own-section {
-  background-image: url(../../img/own-bg.svg);
+  background-image: url(../img/own-bg.svg);
   background-size: cover;
   background-position: center center;
+  position: relative;
+}
+
+.futurevalue-section {
+  background-image: url(../img/futurevalue-bg.svg);
+  background-size: cover;
+  background-position: 50px bottom;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+  .futurevalue-section {
+    background-position: 50px top;
+  }
+}
+
+.single-value {
+  margin: 15px 0px;
+}
+
+.single-value .icon {
+  margin-bottom: 20px;
+}
+
+.single-value h4 {
+  font-weight: 700;
+  color: #2D3561;
+  font-size: 20px;
+}
+
+.single-value p {
+  font-size: 18px;
+  color: #2D3561;
+}
+
+.exchange-section {
+  background-image: url(../img/exchange-bg.svg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  padding-top: 250px;
+}
+
+@media only screen and (max-width: 767px) {
+  .exchange-section {
+    min-height: auto;
+    padding-top: 200px;
+    background-position: center bottom;
+  }
+}
+
+.exchange-section .texts-content p {
+  color: #ffffff;
+}
+
+.quote-section .quote-text {
+  text-align: left;
+}
+
+.quote-section .quote-text p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.quote-section .quote-text h4 {
+  margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .quote-section .quote-text h4 {
+    font-size: 28px;
+  }
+}
+
+.quote-section .quote-text h4 .blue {
+  color: #0086CA;
+}
+
+@media only screen and (max-width: 767px) {
+  .quote-section .quote-text h4 .blue {
+    font-size: 28px;
+  }
+}
+
+.why-section {
+  background-image: url(../img/why-bg.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: -50px top;
+  position: relative;
+}
+
+.single-why {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  min-height: 130px;
+  padding-left: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-why {
+    min-height: 60px;
+    padding-left: 70px;
+  }
+}
+
+.single-why img {
+  max-width: 110px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-why img {
+    max-width: 50px;
+  }
+}
+
+.single-why h4 {
+  font-size: 24px;
+  color: #2D3561;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-why h4 {
+    font-size: 16px;
+  }
+}
+
+.convinced-section {
+  background-image: url(../img/convinced-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 /*# sourceMappingURL=style.css.map */

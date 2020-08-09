@@ -1,0 +1,25 @@
+.quote-section{
+  .quote-text{
+    text-align: left;
+    p{
+      color: $white;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    h4{
+      margin-top: 30px;
+      font-family: $secondaryFont;
+      color: $white;
+      font-size: 50px;
+      @include sm{
+        font-size: 28px;
+      }
+      .blue{
+        color: $secondaryColor;
+        @include sm{
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}

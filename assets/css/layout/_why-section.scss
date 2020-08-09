@@ -1,0 +1,35 @@
+.why-section {
+  background-image: url(../img/why-bg.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: -50px top;
+  position: relative;
+}
+
+.single-why {
+  display: grid;
+  position: relative;
+  min-height: 130px;
+  padding-left: 150px;
+  align-items: center;
+  @include sm{
+    min-height: 60px;
+    padding-left: 70px;
+  }
+  img {
+    max-width: 110px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include sm{
+      max-width: 50px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    color: $navyColor;
+    @include sm{
+      font-size: 16px;
+    }
+  }
+}

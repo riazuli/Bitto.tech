@@ -82,11 +82,12 @@ button:focus {
   }
   &.global {
     min-width: 220px;
+    margin: 5px 0px;
   }
   &.transparent{
-    border: 1px solid $blueColor;
+    border: 1px solid $secondaryColor;
     background: transparent;
-    color: $blueColor;
+    color: $secondaryColor;
   }
 }
 .section-block {

@@ -96,8 +96,11 @@
       font-size: 40px;
     }
     @include sm {
-      font-size: 30px;
+      font-size: 24px;
     }
+  }
+  .white{
+    color: $white;
   }
   .blue {
     font-size: 60px;
@@ -107,16 +110,34 @@
       font-size: 40px;
     }
     @include sm {
-      font-size: 30px;
+      font-size: 24px;
     }
   }
   &.smaller{
     font-size: 30px;
+    @include md{
+      font-size: 24px;
+    }
+    @include sm{
+      font-size: 20px;
+    }
     .blue {
       font-size: 40px;
+      @include md{
+        font-size: 28px;
+      }
+      @include sm{
+        font-size: 22px;
+      }
     }
     .red{
       font-size: 40px;
+      @include md{
+        font-size: 28px;
+      }
+      @include sm{
+        font-size: 22px;
+      }
     }
   }
 }

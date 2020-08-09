@@ -1,0 +1,25 @@
+.futurevalue-section {
+  background-image: url(../img/futurevalue-bg.svg);
+  background-size: cover;
+  background-position: 50px bottom;
+  background-repeat: no-repeat;
+  @include sm{
+    background-position: 50px top;
+  }
+}
+
+.single-value {
+  margin: 15px 0px;
+  .icon {
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-weight: 700;
+    color: $navyColor;
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+    color: $navyColor;
+  }
+}
