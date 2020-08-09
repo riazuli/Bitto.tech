@@ -75,16 +75,17 @@ button:focus {
   padding: 10px 15px;
   border-radius: 5px;
   margin: 0px 8px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   box-shadow: 0px 2px 10px #95e0f7;
   &:hover {
+    opacity: 0.8;
     color: $white;
   }
   &.global {
     min-width: 220px;
     margin: 5px 0px;
   }
-  &.transparent{
+  &.transparent {
     border: 1px solid $secondaryColor;
     background: transparent;
     color: $secondaryColor;
@@ -114,18 +115,15 @@ button:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4c8f",endColorstr="#ffb38f",GradientType=1);
 }
 
-
 .download-btn {
   display: inline-block;
   background-color: transparent;
   transition: all 0.3s ease;
   margin: 4px 0px;
-  &:hover{
-
+  &:hover {
     opacity: 0.9;
   }
 }
-
 
 .white-btn {
   display: inline-block;
@@ -140,21 +138,21 @@ button:focus {
   transition: all 0.3s ease;
   border: 2px solid $white;
   margin: 5px 0px;
-  &:hover{
-      background: transparent;
-      color: $white;
+  &:hover {
+    background: transparent;
+    color: $white;
   }
 }
 
-.red{
+.red {
   color: $primaryColor;
-  @include sm{
+  @include sm {
     font-size: 16px;
   }
 }
-.blue{
+.blue {
   color: $blueColor;
-  @include sm{
+  @include sm {
     font-size: 16px;
   }
 }

@@ -81,6 +81,11 @@
             color: $grayColor;
             font-size: 15px;
             text-align: center;
+            transition: all 0.3s ease;
+            
+            &:hover{
+              color: $secondaryColor;
+            }
             @include md {
               text-align: left;
             }
