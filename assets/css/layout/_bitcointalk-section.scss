@@ -1,0 +1,15 @@
+.bitcointalk-section{
+  .preview-div {
+    .preview-content {
+      bottom: auto;
+      top: -80px;
+      right: 0;
+      @include md{
+        top: -15px;
+      }
+      @include sm{
+        top: 0;
+      }
+    }
+  }
+}

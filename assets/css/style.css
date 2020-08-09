@@ -960,23 +960,34 @@ button:focus {
           justify-content: center;
 }
 
-.preview-section .preview-div {
+.preview-div {
   position: relative;
 }
 
-.preview-section .preview-div .preview {
+.preview-div .disclaimer-text p {
+  font-style: italic;
+  color: #FC7163;
+  margin-top: 20px;
+}
+
+.preview-div .disclaimer-text p a {
+  font-style: italic;
+  color: #FC7163;
+}
+
+.preview-div .preview {
   border-radius: 30px;
 }
 
 @media only screen and (max-width: 767px) {
-  .preview-section .preview-div .preview {
+  .preview-div .preview {
     border-radius: 10px;
   }
 }
 
-.preview-section .preview-div .preview-content {
+.preview-div .preview-content {
   background-color: #ffffff;
-  width: 400px;
+  min-width: 300px;
   padding: 30px;
   border-radius: 45px;
   -webkit-box-shadow: 10px 50px 59px rgba(0, 0, 0, 0.1);
@@ -988,91 +999,79 @@ button:focus {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .preview-section .preview-div .preview-content {
+  .preview-div .preview-content {
     right: 0;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .preview-section .preview-div .preview-content {
+  .preview-div .preview-content {
     right: 0;
     width: auto;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .preview-section .preview-div .preview-content {
+  .preview-div .preview-content {
     right: 0;
-    width: auto;
+    min-width: auto;
   }
 }
 
-.preview-section .preview-div .preview-content p {
+.preview-div .preview-content p {
   font-size: 20px;
   color: #2D3561;
   font-weight: 800;
   margin: 0px;
-  font-style: 400;
 }
 
 @media only screen and (max-width: 767px) {
-  .preview-section .preview-div .preview-content p {
+  .preview-div .preview-content p {
     font-size: 18px;
   }
 }
 
-.preview-section .preview-div .preview-content p span {
+.preview-div .preview-content p span {
   font-style: italic;
   font-size: 28px;
   color: #FC7163;
 }
 
 @media only screen and (max-width: 767px) {
-  .preview-section .preview-div .preview-content p span {
+  .preview-div .preview-content p span {
     font-size: 24px;
   }
 }
 
-.preview-section .preview-div .preview-content p.big {
+.preview-div .preview-content p.big {
   font-size: 50px;
   color: #FC7163;
   font-style: italic;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .preview-section .preview-div .preview-content p.big {
+  .preview-div .preview-content p.big {
     font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .preview-section .preview-div .preview-content p.big {
+  .preview-div .preview-content p.big {
     font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .preview-section .preview-div .preview-content {
+  .preview-div .preview-content {
     position: relative;
     right: 0px;
     bottom: 0px;
   }
 }
 
-.preview-section .disclaimer-text p {
-  font-style: italic;
-  color: #FC7163;
-  margin-top: 20px;
-}
-
-.preview-section .disclaimer-text p a {
-  font-style: italic;
-  color: #FC7163;
-}
-
 .title-text {
   color: #2D3561;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
 }
 
@@ -1089,7 +1088,7 @@ button:focus {
 }
 
 .title-text .red {
-  font-size: 60px;
+  font-size: 55px;
   color: #FC7163;
   font-weight: 900;
 }
@@ -1288,6 +1287,152 @@ button:focus {
 @media only screen and (max-width: 767px) {
   .black-section h1 {
     font-size: 24px;
+  }
+}
+
+.services-section {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: white;
+  background: linear-gradient(167deg, white 0%, #efefef 50%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+.services-section::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/blueish-shape.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: left bottom;
+  z-index: -1;
+}
+
+.single-service {
+  text-align: center;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-service {
+    margin: 10px 0px;
+  }
+}
+
+.single-service img {
+  max-width: 220px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-service img {
+    max-width: 150px;
+  }
+}
+
+.single-service h4 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #0086CA;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-service h4 {
+    font-size: 16px;
+  }
+}
+
+.texts-content {
+  padding: 20px 0px;
+}
+
+.texts-content p {
+  font-family: "Montserrat", sans-serif;
+  color: #2D3561;
+  font-size: 24px;
+}
+
+.texts-content p.blue {
+  color: #1D44F9;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.texts-content p .red {
+  color: #FC7163;
+  font-weight: 900;
+}
+
+.texts-content p.red {
+  color: #FC7163;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.texts-content p i {
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 767px) {
+  .texts-content p {
+    font-size: 16px;
+  }
+}
+
+.bordered-box {
+  border: 4px solid #0086CA;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 80px 50px;
+  text-align: center;
+  margin-top: 40px;
+  -webkit-box-shadow: 0px 24px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 24px 16px rgba(0, 0, 0, 0.1);
+}
+
+.bordered-box h2 {
+  font-size: 35px;
+  color: #2D3561;
+}
+
+.bordered-box h2 .blue {
+  color: #1D44F9;
+}
+
+@media only screen and (max-width: 767px) {
+  .bordered-box h2 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bordered-box {
+    padding: 20px;
+  }
+}
+
+.bitcointalk-section .preview-div .preview-content {
+  bottom: auto;
+  top: -80px;
+  right: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .bitcointalk-section .preview-div .preview-content {
+    top: -15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bitcointalk-section .preview-div .preview-content {
+    top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
