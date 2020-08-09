@@ -1,0 +1,40 @@
+.black-section {
+  background-color: $black;
+  text-align: center;
+  padding: 100px 0px 80px;
+  h2 {
+    font-size: 50px;
+    color: $white;
+    @include md {
+      font-size: 35px;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+    .blue {
+      color: $secondaryColor;
+      font-size: 60px;
+      font-style: italic;
+      display: block;
+      @include md {
+        font-size: 30px;
+      }
+      @include sm {
+        font-size: 24px;
+      }
+    }
+  }
+  h1 {
+    font-size: 80px;
+    color: $yellowColor;
+    font-weight: 900;
+    font-style: italic;
+
+    @include md {
+      font-size: 40px;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+  }
+}

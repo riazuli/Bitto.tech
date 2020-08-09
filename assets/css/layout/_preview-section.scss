@@ -3,6 +3,9 @@
     position: relative;
     .preview {
       border-radius: 30px;
+      @include sm{
+        border-radius: 10px;
+      }
     }
     .preview-content {
       background-color: $white;
@@ -12,22 +15,51 @@
       box-shadow: 10px 50px 59px rgba(0, 0, 0, 0.1);
       position: absolute;
       right: -30px;
-      bottom: -20px;
+      bottom: -20px;padding: 20px;
+      @include lg {
+        right: 0;
+      }
+      @include md {
+        right: 0;
+        width: auto;
+      }
+      @include sm {
+        right: 0;
+        width: auto;
+      }
       p {
         font-size: 20px;
         color: $navyColor;
         font-weight: 800;
         margin: 0px;
+        @include sm{
+          font-size: 18px;
+        }
         span {
           font-style: italic;
           font-size: 28px;
           color: $primaryColor;
+          @include sm{
+            font-size: 24px;
+          }
         }
+        font-style: 400;
         &.big {
           font-size: 50px;
           color: $primaryColor;
           font-style: italic;
+          @include md {
+            font-size: 40px;
+          }
+          @include sm {
+            font-size: 30px;
+          }
         }
+      }
+      @include sm {
+        position: relative;
+        right: 0px;
+        bottom: 0px;
       }
     }
   }
@@ -48,14 +80,32 @@
   color: $navyColor;
   font-size: 50px;
   font-weight: 700;
+  @include md {
+    font-size: 35px;
+  }
+  @include sm {
+    font-size: 24px;
+  }
   .red {
     font-size: 60px;
     color: $primaryColor;
     font-weight: 900;
+    @include md {
+      font-size: 40px;
+    }
+    @include sm {
+      font-size: 30px;
+    }
   }
   .blue {
     font-size: 60px;
     color: $secondaryColor;
     font-weight: 900;
+    @include md {
+      font-size: 40px;
+    }
+    @include sm {
+      font-size: 30px;
+    }
   }
 }

@@ -1,4 +1,10 @@
 .header-area {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 9;
   .top-header {
     background: rgb(255, 76, 143);
     background: -moz-linear-gradient(
@@ -28,62 +34,182 @@
       color: $white;
       font-style: italic;
       margin: 0px;
+      @include sm {
+        font-size: 15px;
+      }
+    }
+    .gradient-btn {
+      @include sm {
+        display: block;
+        padding: 7px;
+        margin: 5px 0px;
+      }
     }
   }
   .header {
     background-color: $white;
+    padding: 10px 0px;
     .navbar-brand {
       img {
         max-width: 180px;
+        @include sm {
+          max-width: 110px;
+        }
       }
     }
 
     .navbar {
+      padding: 0px;
+      .navbar-toggler {
+        font-size: 24px;
+        .navbar-toggler-icon {
+          color: $secondaryColor;
+          height: auto;
+        }
+      }
       .navbar-nav {
+        align-items: center;
         width: 100%;
+        @include md {
+          padding-left: 20px;
+        }
+        @include sm {
+          padding-left: 20px;
+        }
         .nav-item {
           .nav-link {
             color: $grayColor;
             font-size: 15px;
+            text-align: center;
+            @include md {
+              text-align: left;
+            }
+            @include sm {
+              text-align: left;
+            }
+            span {
+              background-color: $secondaryColor;
+              display: inline-block;
+              color: $white;
+              font-weight: 800;
+              padding: 0px 3px;
+              border-radius: 6px;
+              font-size: 12px;
+            }
+            @include lg {
+              font-size: 14px;
+            }
           }
           &.active {
             .nav-link {
               color: $secondaryColor;
             }
           }
-          &.dropdown {
-            margin-left: auto;
-            .dropdown-toggle {
-              img {
-                max-width: 15px;
-                margin-left: 3px;
-              }
-              &:after {
-                display: none;
-              }
-            }
+          @include md {
+            display: block;
+            width: 100%;
+          }
+          @include sm {
+            display: block;
+            width: 100%;
+          }
+        }
+        @include md {
+          align-items: flex-start;
+          padding-top: 20px;
+        }
+        @include sm {
+          align-items: flex-start;
+          padding-top: 20px;
+        }
+      }
 
-            .dropdown-menu {
-              border: 0px;
-              background-color: $offwhiteColor;
-              left: auto;
-              right: 0;
-              border-radius: 5px;
-            }
-
-            .dropdown-item.active,
-            .dropdown-item:active {
-              background: transparent;
-              color: $secondaryColor;
-            }
-
-            .dropdown-item {
-              color: $grayColor;
-              padding-top: 5px;
-              padding-bottom: 5px;
-              transition: all 0.3s ease;
+      .mobile-buttons {
+        display: none;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 20px;
+        border-top: 1px solid rgba(112, 112, 112, 0.1);
+        text-align: center;
+        @include md {
+          display: block;
+        }
+        @include sm {
+          display: block;
+        }
+        .col {
+          &:first-of-type {
+            text-align: right;
+          }
+          &:last-of-type {
+            text-align: left;
+          }
+        }
+        .gradient-btn {
+          &.global {
+            @include sm {
+              display: block;
+              min-width: auto;
+              font-size: 10px;
+              padding: 7px 13px;
             }
           }
+        }
+      }
+
+      .dropdown {
+        margin-left: auto;
+        padding: 0;
+        list-style: none;
+        .nav-link {
+          color: $black;
+          font-size: 15px;
+          @include lg {
+            font-size: 14px;
+          }
+          @include sm {
+            padding: 5px;
+          }
+        }
+        .dropdown-toggle {
+          img {
+            max-width: 15px;
+            margin-left: 3px;
+          }
+          &:after {
+            display: none;
+          }
+        }
+
+        .dropdown-menu {
+          border: 0px;
+          background-color: $offwhiteColor;
+          left: auto;
+          right: 0;
+          border-radius: 5px;
+        }
+
+        .dropdown-item.active,
+        .dropdown-item:active {
+          background: transparent;
+          color: $secondaryColor;
+        }
+
+        .dropdown-item {
+          color: $grayColor;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          transition: all 0.3s ease;
+        }
+        @include md {
+          position: absolute;
+          right: 60px;
+          top: 10px;
+        }
+        @include sm {
+          position: absolute;
+          right: 60px;
+          top: 5px;
         }
       }
     }

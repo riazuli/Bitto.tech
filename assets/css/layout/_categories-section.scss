@@ -4,4 +4,10 @@
   background-position: right top;
   background-repeat: no-repeat;
   padding-top: 70px;
+  @include md{
+    background: transparent;
+  }
+  @include sm{
+    background: transparent;
+  }
 }

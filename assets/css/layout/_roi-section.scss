@@ -6,12 +6,27 @@
   background-position: right bottom;
   min-height: 600px;
   margin-bottom: 20px;
+  @include md{
+    min-height: auto;
+  }
+  @include sm{
+    min-height: auto;
+  }
   > .container, .row{
     min-height: 600px;
+    @include md{
+      min-height: auto;
+    }
+    @include sm{
+      min-height: auto;
+    }
   }
   .roi-text-wrap {
     box-shadow: -30px 50px 59px rgba(60, 78, 105, 0.1);
     padding: 50px 50px 70px;
+    @include sm{
+      padding: 10px;
+    }
     .roi-text {
       max-width: 650px;
       h2 {
@@ -26,11 +41,29 @@
           .red {
             color: $primaryColor;
           }
+          @include sm {
+            font-size: 35px;
+          }
+          @include md {
+            font-size: 45px;
+          }
+        }
+        @include sm {
+          font-size: 24px;
+        }
+        @include md {
+          font-size: 35px;
         }
       }
       .gradient-btn{
         margin-top: 30px;
       }
     }
+  }
+  @include md{
+    background-size: 200px;
+  }
+  @include sm{
+    background: transparent;
   }
 }

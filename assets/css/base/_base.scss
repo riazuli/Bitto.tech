@@ -12,6 +12,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
+  padding-top: 169px;
 }
 
 img {
@@ -81,6 +82,11 @@ button:focus {
   }
   &.global {
     min-width: 220px;
+  }
+  &.transparent{
+    border: 1px solid $blueColor;
+    background: transparent;
+    color: $blueColor;
   }
 }
 .section-block {

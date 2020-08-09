@@ -12,15 +12,30 @@
     padding: 70px 50px;
     text-align: center;
     box-shadow: 10px 50px 59px rgba(0,0,0,0.1);
+    @include md{
+      padding: 50px 30px;
+    }
+    @include sm{
+      padding: 20px;
+    }
     h2 {
       color: $navyColor;
       font-size: 50px;
+      @include md{
+        font-size: 35px;
+      }
+      @include sm{
+        font-size: 24px;
+      }
       .blue {
         color: $secondaryColor;
       }
       &.red {
         color: $primaryColor;
         margin-top: 50px;
+        @include sm{
+          margin-top: 20px;
+        }
       }
     }
     .flying-man,
@@ -29,6 +44,12 @@
       right: 0;
       top: 0;
       width: 120px;
+      @include md{
+        width: 70px;
+      }
+      @include sm{
+        width: 50px;
+      }
     }
     .flying-man {
       top: -20px;
@@ -37,6 +58,12 @@
     .flying-women {
       top: -180px;
       right: 130px;
+      @include md{
+        top: -70px;
+      }
+      @include sm{
+        top: -70px;
+      }
     }
   }
 }

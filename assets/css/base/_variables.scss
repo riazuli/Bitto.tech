@@ -14,3 +14,57 @@ $grayColor2: #DBDFEF;
 $offwhiteColor : #F0F6F8;
 $white : #ffffff;
 $black : #000000;
+
+
+// Mobile layout (landscape view)
+$screen-mobile-max: 767px;
+
+// tablets  min(portrait view)
+$screen-tab-min: 768px;
+
+// tablets  max(portrait view)
+$screen-tab-max: 991px;
+
+// Medium devices min
+$screen-md-min: 992px;
+
+// Medium devices max
+$screen-md-max: 1200px;
+
+// Large devices max
+$screen-xl-min: 1400px;
+
+// Mobile devices
+@mixin sm {
+  @media only screen and (max-width: #{$screen-mobile-max}) {
+      @content;
+  }
+}
+
+// Tablet devices
+@mixin md {
+  @media only screen and (min-width: #{$screen-tab-min}) and (max-width: #{$screen-tab-max})  {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media only screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media only screen and (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media only screen and (min-width: $screen+'px') {
+      @content;
+  }
+}

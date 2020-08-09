@@ -9,6 +9,9 @@
       font-weight: 900;
       color: $primaryColor;
       font-size: 60px;
+      @include sm{
+        font-size: 35px;
+      }
     }
     img {
       &.people {
@@ -22,6 +25,9 @@
       font-weight: 700;
       margin: 30px 0px;
       color: $navyColor;
+      @include sm{
+        font-size: 20px;
+      }
       span {
         font-style: italic;
         color: $blueColor;
@@ -35,6 +41,7 @@
   position: relative;
   img {
     border-radius: 20px;
+    width: 100%;
     max-width: 600px;
   }
   .icon {
@@ -45,6 +52,9 @@
     transform: translate(-50%, -50%);
     img {
       max-width: 100px;
+      @include sm{
+        max-width: 50px;
+      }
     }
   }
 }
