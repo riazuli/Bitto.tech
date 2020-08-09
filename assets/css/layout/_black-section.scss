@@ -43,4 +43,14 @@
       font-style: normal;
     }
   }
+  .gradient-btn{
+    margin-bottom: 30px;
+    @include md{
+      display: inline-block;
+    }
+  }
+  img{
+    display: block;
+    margin: 0 auto;
+  }
 }

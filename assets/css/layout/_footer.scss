@@ -1,0 +1,90 @@
+.footer {
+  background-color: $black;
+  padding-top: 50px;
+
+  .footer-top {
+    padding-bottom: 30px;
+    .container {
+      border-bottom: 2px solid #191919;
+      padding-bottom: 30px;
+    }
+  }
+  .copy-text {
+    color: $white;
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .footer-link {
+    @include md {
+      margin-top: 15px;
+    }
+    h4 {
+      color: $white;
+      font-size: 14px;
+      font-weight: 900;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        a {
+          color: $white;
+          font-size: 14px;
+          display: block;
+        }
+      }
+    }
+  }
+  .footer-brands {
+    padding-bottom: 20px;
+    .title {
+      color: $white;
+      font-size: 20px;
+    }
+    .brand-list {
+      overflow: hidden;
+      clear: both;
+      padding-bottom: 30px;
+      .single-brand {
+        width: 14.285%;
+        float: left;
+        min-height: 100px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        img {
+          padding: 10px;
+        }
+        @include md {
+          width: 33.33%;
+        }
+        @include sm {
+          width: 50%;
+        }
+      }
+      &.wallets {
+        .single-brand {
+          width: 20%;
+
+          @include md {
+            width: 50%;
+          }
+          @include sm {
+            width: 50%;
+          }
+          img {
+            width: 100%;
+            max-width: 220px;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    border-top: 2px solid $grayColor;
+  }
+}

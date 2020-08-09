@@ -126,6 +126,26 @@ button:focus {
   }
 }
 
+
+.white-btn {
+  display: inline-block;
+  font-size: 14px;
+  background-color: $white;
+  padding: 10px 15px;
+  min-width: 150px;
+  text-align: center;
+  font-weight: 700;
+  color: $secondaryColor;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 2px solid $white;
+  margin: 5px 0px;
+  &:hover{
+      background: transparent;
+      color: $white;
+  }
+}
+
 .red{
   color: $primaryColor;
   @include sm{
