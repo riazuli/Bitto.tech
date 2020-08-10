@@ -218,6 +218,14 @@ button:focus {
   height: auto;
 }
 
+.header-area .header .navbar .navbar-toggler[aria-expanded="true"] .fa-bars::before {
+  content: "\f00d";
+}
+
+.header-area .header .navbar .navbar-toggler[aria-expanded="false"] .fa-bars::before {
+  content: "\f0c9";
+}
+
 .header-area .header .navbar .navbar-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -243,6 +251,10 @@ button:focus {
   text-align: center;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.header-area .header .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #0086CA;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -450,6 +462,13 @@ button:focus {
   font-weight: 900;
 }
 
+@media only screen and (max-width: 767px) {
+  .footer .footer-link h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+}
+
 .footer .footer-link ul {
   margin: 0;
   padding: 0;
@@ -537,6 +556,12 @@ button:focus {
 
 .footer .footer-bottom {
   border-top: 2px solid #2c3033;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer .gradient-btn {
+    margin-top: 20px;
+  }
 }
 
 .intro-area {

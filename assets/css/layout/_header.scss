@@ -66,6 +66,20 @@
           color: $secondaryColor;
           height: auto;
         }
+        &[aria-expanded="true"] {
+          .fa-bars {
+            &::before {
+              content: "\f00d";
+            }
+          }
+        }
+        &[aria-expanded="false"] {
+          .fa-bars {
+            &::before {
+              content: "\f0c9";
+            }
+          }
+        }
       }
       .navbar-nav {
         align-items: center;
@@ -82,8 +96,8 @@
             font-size: 15px;
             text-align: center;
             transition: all 0.3s ease;
-            
-            &:hover{
+
+            &:hover {
               color: $secondaryColor;
             }
             @include md {

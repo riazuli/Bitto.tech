@@ -24,6 +24,10 @@
       color: $white;
       font-size: 14px;
       font-weight: 900;
+      @include sm{
+        margin-top: 25px;
+        margin-bottom: 10px;
+      }
     }
     ul {
       margin: 0;
@@ -90,5 +94,10 @@
   }
   .footer-bottom {
     border-top: 2px solid $grayColor;
+  }
+  .gradient-btn{
+    @include sm{
+      margin-top: 20px;
+    }
   }
 }
