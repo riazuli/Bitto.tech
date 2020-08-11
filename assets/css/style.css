@@ -3,6 +3,7 @@
 html,
 body {
   height: 100%;
+  position: relative;
 }
 
 body {
@@ -131,20 +132,52 @@ button:focus {
   color: #FC7163;
 }
 
-@media only screen and (max-width: 767px) {
-  .red {
-    font-size: 16px;
-  }
-}
-
 .blue {
   color: #1D44F9;
 }
 
+.scroll-to-top {
+  opacity: 0;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  z-index: 9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top img {
+  max-width: 50px;
+}
+
 @media only screen and (max-width: 767px) {
-  .blue {
-    font-size: 16px;
+  .scroll-to-top img {
+    max-width: 40px;
   }
+}
+
+.scroll-to-top.active {
+  opacity: 1;
+}
+
+.video-modal .modal-content {
+  border: 0px;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+.video-modal .modal-content .modal-body {
+  padding: 0px;
+}
+
+.video-modal .modal-content .close {
+  position: absolute;
+  right: 5px;
+  top: -45px;
+  z-index: 9;
+  color: #fff;
+  opacity: 1;
+  font-size: 45px;
 }
 
 .header-area {
@@ -152,7 +185,7 @@ button:focus {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 9;
 }
 
@@ -191,7 +224,6 @@ button:focus {
 }
 
 .header-area .header {
-  background-color: #ffffff;
   padding: 10px 0px;
 }
 
@@ -438,9 +470,21 @@ button:focus {
   padding-bottom: 30px;
 }
 
+@media only screen and (max-width: 767px) {
+  .footer .footer-top {
+    padding-bottom: 15px;
+  }
+}
+
 .footer .footer-top .container {
   border-bottom: 2px solid #191919;
   padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer .footer-top .container {
+    padding-bottom: 15px;
+  }
 }
 
 .footer .copy-text {
@@ -502,6 +546,12 @@ button:focus {
   padding-bottom: 30px;
 }
 
+@media only screen and (max-width: 767px) {
+  .footer .footer-brands .brand-list {
+    padding-bottom: 0px;
+  }
+}
+
 .footer .footer-brands .brand-list .single-brand {
   width: 14.285%;
   float: left;
@@ -521,6 +571,12 @@ button:focus {
   padding: 10px;
 }
 
+@media only screen and (max-width: 767px) {
+  .footer .footer-brands .brand-list .single-brand img {
+    max-width: 135px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer .footer-brands .brand-list .single-brand {
     width: 33.33%;
@@ -530,6 +586,7 @@ button:focus {
 @media only screen and (max-width: 767px) {
   .footer .footer-brands .brand-list .single-brand {
     width: 50%;
+    min-height: 60px;
   }
 }
 
@@ -552,6 +609,15 @@ button:focus {
 .footer .footer-brands .brand-list.wallets .single-brand img {
   width: 100%;
   max-width: 220px;
+}
+
+.footer .footer-brands .brand-list.wallets .single-brand:last-child {
+  width: 100%;
+  text-align: center;
+}
+
+.footer .footer-brands .brand-list.wallets .single-brand:last-child img {
+  max-width: 145px;
 }
 
 .footer .footer-bottom {
@@ -642,6 +708,14 @@ button:focus {
   }
 }
 
+.intro-video .icon .text {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  color: #ffffff;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
 .mononpoly-section {
   background-image: url(../img/triangle-rotate.svg);
   background-size: contain;
@@ -653,6 +727,12 @@ button:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .mononpoly-section {
     background: transparent;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mononpoly-section .list-block h2 .red {
+    color: #0086CA;
   }
 }
 
@@ -1091,8 +1171,8 @@ button:focus {
 @media only screen and (max-width: 767px) {
   .videodesc-section ul li {
     text-align: center;
-    padding: 5px 0px;
-    font-size: 16px;
+    padding: 2px 0px;
+    font-size: 13px;
   }
 }
 
@@ -1212,6 +1292,10 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.brands-section .brands .col-lg-2 img {
+  max-width: 135px;
 }
 
 .preview-div {
@@ -1385,6 +1469,23 @@ button:focus {
   }
 }
 
+.title-text .real-blue {
+  font-size: 40px;
+  color: #1D44F9;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .title-text .real-blue {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title-text .real-blue {
+    font-size: 24px;
+  }
+}
+
 .title-text.smaller {
   font-size: 30px;
 }
@@ -1433,6 +1534,12 @@ button:focus {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .title-text.mt-5 {
+    margin-top: 0px !important;
+  }
+}
+
 .btc-section {
   background-image: url(../img/bg-blue.svg);
   background-size: 70%;
@@ -1452,6 +1559,18 @@ button:focus {
   color: #FFE37B;
   font-weight: 900;
   font-style: italic;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .btc-section h2 .yellow {
+    color: #FC7163;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .btc-section h2 .yellow {
+    color: #FC7163;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1618,6 +1737,23 @@ button:focus {
 .black-section img {
   display: block;
   margin: 0 auto;
+  min-height: 100px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .black-section img {
+    min-height: auto;
+    max-width: 400px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .black-section img {
+    min-height: auto;
+    max-width: 200px;
+    margin-bottom: 5px;
+  }
 }
 
 .services-section {
@@ -1791,6 +1927,24 @@ button:focus {
   border-radius: 20px;
   -webkit-box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .wave-section .tokens img {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .wave-section .texts-content p {
+    margin-bottom: 3px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .wave-section .texts-content {
+    padding: 0px;
+  }
 }
 
 .important-section {
@@ -2140,6 +2294,18 @@ button:focus {
   color: #ffffff;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quote-section {
+    padding: 50px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .quote-section {
+    padding: 50px 0px 0px;
+  }
+}
+
 .quote-section .quote-text {
   text-align: left;
 }
@@ -2170,6 +2336,20 @@ button:focus {
 @media only screen and (max-width: 767px) {
   .quote-section .quote-text h4 .blue {
     font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quote-section img {
+    max-width: 350px;
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .quote-section img {
+    max-width: 200px;
+    margin: 0px;
   }
 }
 

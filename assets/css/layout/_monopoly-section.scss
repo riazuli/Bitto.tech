@@ -4,8 +4,17 @@
   background-repeat: no-repeat;
   background-position: left center;
   padding: 40px 0px;
-  @include md{
+  @include md {
     background: transparent;
+  }
+  .list-block {
+    h2 {
+      .red {
+        @include sm{
+          color: $secondaryColor;
+        }
+      }
+    }
   }
 }
 
@@ -37,7 +46,7 @@
         font-size: 24px;
       }
     }
-    &.thin{
+    &.thin {
       font-weight: 700;
     }
   }
@@ -81,37 +90,37 @@
       }
     }
   }
-  &.no-list{
-    h4{
-      &.navy{
+  &.no-list {
+    h4 {
+      &.navy {
         font-size: 30px;
         color: $navyColor;
-        @include md{
+        @include md {
           margin-top: 20px;
         }
-        @include sm{
+        @include sm {
           margin-top: 20px;
         }
-        .blue{
+        .blue {
           color: $secondaryColor;
         }
-        .real-red{
+        .real-red {
           color: $redColor;
         }
-        @include sm{
+        @include sm {
           font-size: 20px;
         }
       }
     }
-    ul{
-      li{
+    ul {
+      li {
         padding-left: 0px;
         font-size: 20px;
         &:before {
           display: none;
         }
-        
-        @include sm{
+
+        @include sm {
           font-size: 16px;
         }
       }

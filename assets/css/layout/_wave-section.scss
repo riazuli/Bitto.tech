@@ -10,6 +10,19 @@
     img{
       border-radius: 20px;
       box-shadow: 0px 40px 70px rgba(0,0,0,0.1);
+      @include sm{
+        margin: 0 !important;
+      }
+    }
+  }
+  .texts-content{
+    p{
+      @include sm{
+        margin-bottom: 3px;
+      }
+    }
+    @include sm{
+      padding: 0px;
     }
   }
 }

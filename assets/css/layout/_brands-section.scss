@@ -4,7 +4,7 @@
   background-color: $offwhiteColor;
   text-align: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
-  &:after{
+  &:after {
     content: "BITTO ARE NOW ON";
     position: absolute;
     left: 0;
@@ -13,10 +13,10 @@
     font-weight: 900;
     color: $grayColor2;
     opacity: 0.1;
-    @include md{
+    @include md {
       font-size: 60px;
     }
-    @include sm{
+    @include sm {
       font-size: 30px;
     }
   }
@@ -24,10 +24,10 @@
     font-size: 70px;
     font-weight: 900;
     color: $primaryColor;
-    @include md{
+    @include md {
       font-size: 50px;
     }
-    @include sm{
+    @include sm {
       font-size: 30px;
     }
   }
@@ -46,6 +46,9 @@
       align-items: center;
       text-align: center;
       justify-content: center;
+      img {
+        max-width: 135px;
+      }
     }
   }
 }

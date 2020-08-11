@@ -13,6 +13,12 @@
       color: $yellowColor;
       font-weight: 900;
       font-style: italic;
+      @include md{
+        color: $primaryColor;
+      }
+      @include sm{
+        color: $primaryColor;
+      }
     }
     @include md{
       font-size: 30px;

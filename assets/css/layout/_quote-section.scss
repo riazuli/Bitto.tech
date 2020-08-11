@@ -1,4 +1,10 @@
 .quote-section{
+  @include md{
+    padding: 50px 0px 0px;
+  }
+  @include sm{
+    padding: 50px 0px 0px;
+  }
   .quote-text{
     text-align: left;
     p{
@@ -20,6 +26,16 @@
           font-size: 28px;
         }
       }
+    }
+  }
+  img{
+    @include md{
+      max-width: 350px;
+      margin: 0px;
+    }
+    @include sm{
+      max-width: 200px;
+      margin: 0px;
     }
   }
 }
