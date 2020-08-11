@@ -52,14 +52,78 @@
     transform: translate(-50%, -50%);
     img {
       max-width: 100px;
-      @include sm{
+      border-radius: 50%;
+      @include sm {
         max-width: 50px;
+      }
+      -webkit-animation: glowing 1500ms infinite;
+      -moz-animation: glowing 1500ms infinite;
+      -o-animation: glowing 1500ms infinite;
+      animation: glowing 1500ms infinite;
+      @-webkit-keyframes glowing {
+        0% {
+          background-color: $primaryColor;
+          -webkit-box-shadow: 0 0 3px $primaryColor;
+        }
+        50% {
+          background-color: $primaryColor;
+          -webkit-box-shadow: 0 0 40px $primaryColor;
+        }
+        100% {
+          background-color: $primaryColor;
+          -webkit-box-shadow: 0 0 3px $primaryColor;
+        }
+      }
+
+      @-moz-keyframes glowing {
+        0% {
+          background-color: $primaryColor;
+          -moz-box-shadow: 0 0 3px $primaryColor;
+        }
+        50% {
+          background-color: $primaryColor;
+          -moz-box-shadow: 0 0 40px $primaryColor;
+        }
+        100% {
+          background-color: $primaryColor;
+          -moz-box-shadow: 0 0 3px $primaryColor;
+        }
+      }
+
+      @-o-keyframes glowing {
+        0% {
+          background-color: $primaryColor;
+          box-shadow: 0 0 3px $primaryColor;
+        }
+        50% {
+          background-color: $primaryColor;
+          box-shadow: 0 0 40px $primaryColor;
+        }
+        100% {
+          background-color: $primaryColor;
+          box-shadow: 0 0 3px $primaryColor;
+        }
+      }
+
+      @keyframes glowing {
+        0% {
+          background-color: $primaryColor;
+          box-shadow: 0 0 3px $primaryColor;
+        }
+        50% {
+          background-color: $primaryColor;
+          box-shadow: 0 0 40px $primaryColor;
+        }
+        100% {
+          background-color: $primaryColor;
+          box-shadow: 0 0 3px $primaryColor;
+        }
       }
     }
     .text{
       font-family: $primaryFont;
       display: block;
-      color: $white;
+      color: $primaryColor;
       font-weight: 800;
       margin-top: 10px;
     }

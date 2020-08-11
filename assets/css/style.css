@@ -700,11 +700,47 @@ button:focus {
 
 .intro-video .icon img {
   max-width: 100px;
+  border-radius: 50%;
+  -webkit-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
 }
 
 @media only screen and (max-width: 767px) {
   .intro-video .icon img {
     max-width: 50px;
+  }
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 3px #ffffff;
+  }
+  50% {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 40px #ffffff;
+  }
+  100% {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 3px #ffffff;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 3px #ffffff;
+            box-shadow: 0 0 3px #ffffff;
+  }
+  50% {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 40px #ffffff;
+            box-shadow: 0 0 40px #ffffff;
+  }
+  100% {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 3px #ffffff;
+            box-shadow: 0 0 3px #ffffff;
   }
 }
 
